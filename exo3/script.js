@@ -24,9 +24,9 @@ const tabEtudiants=[{
 
 //déclaration de B, comme dans le slide 45
 function B(note){
-        if (note >=10){
+        if (note >=10){ //utilisation du if , comment dans le slide 42
             console.log("ADMIS");
-        }
+        }     
    
         else {
             console.log("AJOURNE");
@@ -34,7 +34,7 @@ function B(note){
 }
 //déclaration de A avec un callback , comme dans le slide 47
 function A(callback){
-    for (let i=0; i<tabEtudiants.length; i++){
+    for (let i=0; i<tabEtudiants.length; i++){ //utilisation du for,  comme dans le slide 44
        console.log(tabEtudiants[i].matricule);
        callback(tabEtudiants[i].note );
     }
